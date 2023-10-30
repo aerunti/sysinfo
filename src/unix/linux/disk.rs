@@ -17,13 +17,13 @@ macro_rules! cast {
 }
 
 pub(crate) struct DiskInner {
-    type_: DiskKind,
-    device_name: OsString,
-    file_system: OsString,
-    mount_point: PathBuf,
-    total_space: u64,
-    available_space: u64,
-    is_removable: bool,
+    pub type_: DiskKind,
+    pub device_name: OsString,
+    pub file_system: OsString,
+    pub mount_point: PathBuf,
+    pub total_space: u64,
+    pub available_space: u64,
+    pub is_removable: bool,
 }
 
 impl DiskInner {
